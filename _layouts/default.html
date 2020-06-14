@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+        
+        <title>{{ page.title }}</title>
+        <meta name="viewport" content="width=device-width">
+
+        <meta name="theme-color" content="#ff8f57">
+        
+        <!-- Custom JS -->
+        <script type="text/javascript" src="/assets/js/main.js"> </script>
+
+        <!--Bootstrap -->
+        <link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.0.3/css/bootstrap.min.css">
+
+        <!--FontAwesome -->
+        <link  rel="stylesheet" href="//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css">
+
+        <!-- Source Sans font -->
+        <link href='http://fonts.googleapis.com/css?family=Source+Sans+Pro:400,300' rel='stylesheet' type='text/css'>
+
+        <!-- Custom CSS -->
+        <link rel="stylesheet" href="/assets/css/main.css">
+
+        <!-- syntax highlighting CSS -->
+        <link rel="stylesheet" href="/assets/css/syntax.css">
+
+        <!-- FavIcon -->
+        <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon" />
+        
+    </head>
+    <body>
+
+        <div class="site">
+          <header class="menu">
+            <nav class="grid">
+                <ul class="custom-row">
+                    <li class="col-md-3 {% if page.active == "home" %}active{%endif%}"><a href="/">Jasinobe</a></li>
+                    <li class="col-md-3 {% if page.active == "projects" %}active{%endif%}"><a href="/projects/">Projects</a></li>
+                    <li class="col-md-3 {% if page.active == "resume" %}active{%endif%}"><a href="/resume/">Resume</a></li>
+                    <li class="col-md-3 {% if page.active == "connect" %}active{%endif%}"><a href="/connect/">Connect</a></li>
+                </ul>
+            </nav>
+          </header>
+          
+          <div class="main-grid">
+            {{ content }}
+          </div>
+
+          <footer class="copyright">
+              <div class="grid">
+                  <div class="custom-row">
+                      <p class="col-md-8 col-md-offset-2"> &copy; Jasmeet Oberai 2014. This site is served by Jekyll and is hosted on <a href="https://github.com/{{site.github}}/{{site.github}}.github.io">GitHub</a> </p>
+                  </div>
+              </div>
+          </footer>
+
+        </div>
+    </body>
+</html>
