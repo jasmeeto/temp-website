@@ -1,9 +1,9 @@
 {
-  "name": "gatsby-starter-default",
+  "name": "jasmeetoberai-website",
   "private": true,
-  "description": "A simple starter to get up and developing quickly with Gatsby",
+  "description": "website for jasmeetoberai.com",
   "version": "0.1.0",
-  "author": "Kyle Mathews <mathews.kyle@gmail.com>",
+  "author": "Jasmeet Oberai",
   "dependencies": {
     "gatsby": "^2.22.15",
     "gatsby-image": "^2.4.5",
@@ -40,9 +40,9 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/gatsbyjs/gatsby-starter-default"
+    "url": "https://github.com/jasmeeto/jasmeeto.github.io"
   },
   "bugs": {
-    "url": "https://github.com/gatsbyjs/gatsby/issues"
+    "url": "https://github.com/jasmeeto/jasmeeto.github.io/issues"
   }
 }
