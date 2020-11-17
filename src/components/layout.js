@@ -24,23 +24,34 @@ const Layout = ({ children }) => {
   `)
 
   return (
-    <>
-      <Header siteTitle={data.site.siteMetadata.title} />
-      <div
-        style={{
-          margin: `0 auto`,
-          maxWidth: 960,
-          padding: `0 1.0875rem 1.45rem`,
-        }}
-      >
-        <main>{children}</main>
-        <footer>
-          © {new Date().getFullYear()}, Built with
-          {` `}
-          <a href="https://www.gatsbyjs.org">Gatsby</a>
+      // <Header siteTitle={data.site.siteMetadata.title} />
+
+      <div class="site">
+        <header class="menu">
+          <nav class="grid">
+              <ul class="custom-row">
+                  <li class="col-md-3 "><a href="/">Jasinobe</a></li>
+                  <li class="col-md-3 "><a href="/projects/">Projects</a></li>
+                  <li class="col-md-3 "><a href="/resume/">Resume</a></li>
+                  <li class="col-md-3 "><a href="/connect/">Connect</a></li>
+              </ul>
+          </nav>
+        </header>
+        
+        <div class="main-grid">
+          { children }
+        </div>
+
+        <footer class="copyright">
+            <div class="grid">
+                <div class="custom-row">
+                    <p class="col-md-8 col-md-offset-2"> &copy; Jasmeet Oberai 2014. This site is served by Jekyll and is hosted on <a href="https://github.com/{{site.github}}/{{site.github}}.github.io">GitHub</a> </p>
+                </div>
+            </div>
         </footer>
+
       </div>
-    </>
+
   )
 }
 
