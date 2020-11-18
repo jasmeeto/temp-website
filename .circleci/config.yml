@@ -1,3 +1,15 @@
+jobs:
+  build-and-deploy:
+    executor:
+      name: node/default
+    steps:
+      - checkout
+      - run:
+          command: ls
 version: 2.1
 orbs:
   node: circleci/node@3.0.0
+workflows:
+  node-tests:
+    jobs:
+      - build-and-deploy
