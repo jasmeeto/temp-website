@@ -17,7 +17,11 @@ const ResumePage = () => (
             <a href="http://ca.linkedin.com/in/{{ site.linkedin }}/">LinkedIn Profile</a>
             <br />
             <br />
-            <iframe id="pdf-resume" src="http://docs.google.com/gview?url=http://{{ site.website }}/assets/pdf/Jasmeet-Oberai-CV-condensed.pdf&embedded=true" style={{width:'100%'}} frameborder="0"></iframe>
+            <iframe title="pdf-resume" 
+                    id="pdf-resume"
+                    src="http://docs.google.com/gview?url=http://{{ site.website }}/assets/pdf/Jasmeet-Oberai-CV-condensed.pdf&embedded=true"
+                    style={{width:'100%'}}
+                    frameborder="0"></iframe>
           </div>
         </section>
       </article>

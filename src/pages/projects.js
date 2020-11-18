@@ -10,12 +10,12 @@ const ProjectsPage = () => (
         <section>
           <h2 class="sub-heading">
             <i class="fa fa-plane fa-fw"></i>
-          ItinPlanner
+            ItinPlanner
         </h2>
           <div>
             <ul class="proj-list">
               <li>
-                <i class="fa fa-chevron-right"></i>
+                <i class="fa fa-chevron-right"> </i>
             Travel planning app created during fourth year as a design project
             </li>
               <li>

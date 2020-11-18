@@ -57,7 +57,6 @@ exports.createPages = async ({ graphql, actions }) => {
       }
       `
     ).then(result => {
-      console.log("ASDFSDF");
       if(result.errors) {
         return Promise.reject(result.errors)
       }
