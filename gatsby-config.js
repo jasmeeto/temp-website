@@ -3,8 +3,13 @@ module.exports = {
   siteMetadata: {
     title: `Jasmeet Oberai`,
     description: `Jasmeet Oberais personal website`,
-    author: `@jasmeeto`,
-    
+    author: `@JasmeetOberai`,
+    email: "me@jasmeetoberai.com",
+    github: "jasmeeto",
+    linkedin: "jasoberai",
+    facebook: "jas.oberai",
+    twitter: "JasmeetOberai",
+    website: "www.jasmeetoberai.com"
   },
   plugins: [
     `gatsby-plugin-react-helmet`,

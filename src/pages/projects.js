@@ -3,7 +3,7 @@ import Layout from "../components/layout"
 import SEO from "../components/seo"
 
 const ProjectsPage = () => (
-  <Layout title="Jasmeet Oberai">
+  <Layout page="projects">
     <SEO title="Projects" />
     <div class="custom-row">
       <article class="page col-md-8 col-md-offset-2">

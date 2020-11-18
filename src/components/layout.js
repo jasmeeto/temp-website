@@ -9,9 +9,21 @@ import PropTypes from "prop-types"
 import React from "react"
 import Head from "./head"
 import "./layout.css"
+import { useStaticQuery, graphql } from "gatsby"
 
+const Layout = ({ page,  children }) => {
+  const { site } = useStaticQuery(
+    graphql`
+      query {
+        site {
+          siteMetadata {
+            github
+          }
+        } 
+      }
+    `
+  )
 
-const Layout = ({ children }) => {
   return (
       // <Header siteTitle={data.site.siteMetadata.title} />
       <div class="site">
@@ -19,10 +31,10 @@ const Layout = ({ children }) => {
         <header class="menu">
           <nav class="grid">
               <ul class="custom-row">
-                  <li class="col-md-3 "><a href="/">Home</a></li>
-                  <li class="col-md-3 "><a href="/projects/">Projects</a></li>
-                  <li class="col-md-3 "><a href="/resume/">Resume</a></li>
-                  <li class="col-md-3 "><a href="/connect/">Connect</a></li>
+                  <li class={'col-md-3 ' + (page === "home" ? "active" : "")}><a href="/">Home</a></li>
+                  <li class={'col-md-3 ' + (page === "projects" ? "active" : "")}><a href="/projects">Projects</a></li>
+                  <li class={'col-md-3 ' + (page === "resume" ? "active" : "")}><a href="/resume">Resume</a></li>
+                  <li class={'col-md-3 ' + (page === "connect" ? "active" : "")}><a href="/connect">Connect</a></li>
               </ul>
           </nav>
         </header>
@@ -34,7 +46,8 @@ const Layout = ({ children }) => {
         <footer class="copyright">
             <div class="grid">
                 <div class="custom-row">
-                    <p class="col-md-8 col-md-offset-2"> &copy; Jasmeet Oberai 2020. This site is served by Gatsby and is hosted on <a href="https://github.com/{{site.github}}/{{site.github}}.github.io">GitHub</a> </p>
+                    <p class="col-md-8 col-md-offset-2"> &copy; Jasmeet Oberai 2020. This site is served by Gatsby and is hosted on
+                       <a href={'https://github.com/' + site.siteMetadata.github + '/' + site.siteMetadata.github +'.github.io'}>GitHub</a> </p>
                 </div>
             </div>
         </footer>
