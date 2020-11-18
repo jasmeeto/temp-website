@@ -5,9 +5,8 @@ jobs:
     steps:
       - checkout
       - node/install-packages:
-          pkg-manager: yarn
       - run:
-          command: yarn run build
+          command: npm run build
 version: 2.1
 orbs:
   node: circleci/node@3.0.0
