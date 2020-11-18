@@ -16,11 +16,11 @@ const ProjectsPage = () => (
             <ul class="proj-list">
               <li>
                 <i class="fa fa-chevron-right"> </i>
-            Travel planning app created during fourth year as a design project
-            </li>
+                <span> Travel planning app created during fourth year as a design project</span>
+               </li>
               <li>
                 <i class="fa fa-chevron-right"></i>
-            Made using <b>django REST framework</b>, and <b>Android (Java/XML)</b>, with <b>BUCK</b> as the build system
+                <span> Made using <b>django REST framework</b>, and <b>Android (Java/XML)</b>, with <b>BUCK</b> as the build system</span>
             </li>
             </ul>
             <p>
@@ -36,7 +36,7 @@ const ProjectsPage = () => (
             <ul class="proj-list">
               <li>
                 <i class="fa fa-chevron-right"></i>
-            A real-time multi user sketch pad made using <b>Node.js</b>, <b>Backbone.js</b>, <b>Omni.js</b>, <b>HTML5</b>, and <b>CSS3</b>
+                <span> A real-time multi user sketch pad made using <b>Node.js</b>, <b>Backbone.js</b>, <b>Omni.js</b>, <b>HTML5</b>, and <b>CSS3</b></span>
               </li>
             </ul>
             <p>
@@ -53,11 +53,10 @@ const ProjectsPage = () => (
             <ul class="proj-list">
               <li>
                 <i class="fa fa-chevron-right"></i>
-            ideaHub is a web app that allows budding entrepreneurs to share ideas, look for resources, and execute.
-            </li>
+                <span> ideaHub is a web app that allows budding entrepreneurs to share ideas, look for resources, and execute.</span></li>
               <li>
                 <i class="fa fa-chevron-right"></i>
-            Made using <b>Node.js</b>, <b>MongoDB</b>, <b>Jade/HTML5</b>, <b>CSS3</b> and <b>jQuery</b>
+            <span> Made using <b>Node.js</b>, <b>MongoDB</b>, <b>Jade/HTML5</b>, <b>CSS3</b> and <b>jQuery</b></span>
               </li>
             </ul>
             <p>
@@ -74,7 +73,7 @@ const ProjectsPage = () => (
             <ul class="proj-list">
               <li>
                 <i class="fa fa-chevron-right"></i>
-            2D <b>Android</b> game created with <b>libgdx</b> based on the classic game Duck Hunt.
+            <span> 2D <b>Android</b> game created with <b>libgdx</b> based on the classic game Duck Hunt.</span>
             </li>
             </ul>
             <p>
@@ -90,7 +89,7 @@ const ProjectsPage = () => (
             <ul class="proj-list">
               <li>
                 <i class="fa fa-chevron-right"></i>
-            A remake of another classic, Pong. Made using the <b>C++</b> Allegro library v4
+            <span> A remake of another classic, Pong. Made using the <b>C++</b> Allegro library v4</span>
             </li>
             </ul>
             <p>

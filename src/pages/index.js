@@ -66,8 +66,9 @@ const IndexPage = () => {
                 // .filter(({ node }) => node.frontmatter.layout === 'post')
                 .map(({ node }) => (
                   <li key={node.id}>
-                    <span class="meta">{node.frontmatter.date }</span> &raquo;
-                    <Link
+                    <span class="meta">{node.frontmatter.date }</span>
+                    <span> &raquo; </span>
+                     <Link
                       to={node.fields.slug}>
                         {node.frontmatter.title}
                       </Link>
