@@ -6,11 +6,8 @@ jobs:
       - checkout
       - node/install-packages:
             cache-path: ~/project/node_modules
-            override-ci-command: npm install
       - run:
           command: npm run build
-      - run:
-          command: npm list
       - run:
           command: npm run deploy
 version: 2.1
