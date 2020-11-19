@@ -1,6 +1,7 @@
 import React from "react"
 import Layout from "../components/layout"
 import SEO from "../components/seo"
+import ResizablePdf from "../components/resizable-pdf"
 import { useStaticQuery, graphql } from "gatsby"
 
 const ResumePage = () => {
@@ -33,11 +34,7 @@ const ResumePage = () => {
             <a href={"http://ca.linkedin.com/in/" + site.siteMetadata.linkedin }>LinkedIn Profile</a>
             <br />
             <br />
-            <iframe title="pdf-resume" 
-                    id="pdf-resume"
-                    src={"http://docs.google.com/gview?url=http://"+ site.siteMetadata.website +"/assets/pdf/Jasmeet-Oberai-CV-condensed.pdf&embedded=true"}
-                    style={{width:'100%'}}
-                    frameborder="0"></iframe>
+            <ResizablePdf pdfUrl={"http://" + site.siteMetadata.website + "/assets/pdf/Jasmeet-Oberai-CV-condensed.pdf"} />
           </div>
         </section>
       </article>

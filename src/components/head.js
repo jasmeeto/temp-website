@@ -3,7 +3,7 @@ import {Helmet} from "react-helmet"
 
 const Head = ({ siteTitle }) => (
     <Helmet>
-        <script type="text/javascript" src="/assets/js/main.js"> </script>
+        {/* <script type="text/javascript" src="/assets/js/main.js"> </script> */}
 
         <link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.0.3/css/bootstrap.min.css"/>
 
